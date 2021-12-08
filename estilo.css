@@ -1,177 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-*{
-	margin: 0px;
-	padding: 0px;
-}
-
 body{
-	font-family: 'Roboto', sans-serif;	
-	background-color: #000000;
+    font-height: 400px;
+    font-family: Georgia, sans-serif;
 }
 
+.bg-dark{
+    background-color: #000 !important;
 
-#header{
-	position: fixed;
-	top: 0;
-	left: 10%;
-	width: 80%;
-	height: 100px;
-	background-color: #2C7873;
-	z-index: 1000;
-	border-radius: 0 0 25px 25px; 
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
 }
 
-
-#header .navbar{
-	flex-basis: 150px;
-	padding: 25px;
-	transition: all 250ms ease-in-out;
-
-}	
-
-#header .navbar:hover{
-	background-color: #6fb8fb;
+#fondo{
+    background-image: url(deephouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    height: 50vh;
+    overflow: auto;
+    position: relative;
 }
 
-
-#header .navbar{
-	flex-grow: 1;
+#fondo span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    gredien
 }
 
-.navbar{
-	display: flex;
-	justify-content: space-around;
+.titulo{
+    font-size: 3rem;
 }
 
-.navbar li{
-	list-style-type: none;
-}
-
-.navbar li a{
-	text-decoration: none;
-	color: #000000
-}
-
-#main{
-	max-width: 80%;
-	display: grid;
-	padding-top: 200px;
-	margin: auto;
-	grid-template-columns: 4fr 8fr;
-}
-
-
-#main .titulo{
-	position: sticky;
-	top: 200px;
-	font-size: 1.5rem;
-	color: #fff;
-}
-
-#main .BoxContent{
-	border-radius: 1rem;
-	background-color: #E6E340;
-	color: #000000;
-	margin-bottom: 2rem;
-	padding: 2.5rem;
-	min-height: 200px;
-}
-
-#main .BoxContent p{
-	font-size: 1rem;	
-	line-height: 1rem;
+.texto{
+    font-weight: 300px;
 }
 
 .contenedor{
-	display: flex;
-	flex-direction: row;
-	padding: 3rem 0;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0;
+    justify-content: space-between;
 
 }
 
 .contenedor .caja{
-	width: 100%;
-	padding: 30px;
-	box-sizing: border-box;
-	background-color: #fff;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
 }
 
 .contenedor .caja img{
-	width: 60%;
-	margin: 30px;
-	background-color: #fff;
-	transition: all 250ms ease-in-out;
+    width: 60%;
+    margin: 30px;
+    background-color: #fff;
+    transition: all 250ms ease-in-out;
 
 }
 
 .contenedor .caja:hover img{
-	transform: scale(1.1);
-	box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
 }
 
 .contenedor .caja .titulo{
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .contenedor .caja .detalles{
-	padding: 1rem 5px;
+    padding: 1rem 5px;
 }
 
 .contenedor .caja .precio {
-	font-size: 3rem;
-	color: #444;
+    font-size: 3rem;
+    color: #444;
 }
 
 #footer{
-	min-height: 100px;
-	background-color: #000000;
-	color: #fff;
-	padding: 20px;
+    min-height: 200px;
+    background-color: #000000;
+    color: #fff;
+    padding: 40px;
 }
-
-
-
-@media screen and (max-width: 600px) {
-	body{
-		font-family: 'Roboto', sans-serif;
-		background-color: #f3ab;
-	}
-
-	#header{
-		flex-direction: row;
-	}
-
-	#header .navBar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    }
-
-    .uno, .dos, .tres{
-    	display: none;
-    }
-
-    .BoxContent{
-    margin: 3rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    }
-
-    .BoxContent p{
-    width: 100%;
-    padding: 15px;
-    margin: 0 5%;
-    box-sizing: border-box;
-    }
-   }
- 
-    
-
-
