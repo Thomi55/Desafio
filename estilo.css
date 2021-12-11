@@ -1,6 +1,7 @@
 body{
     font-height: 400px;
     font-family: Georgia, sans-serif;
+    background-color: burlywood;
 }
 
 .bg-dark{
@@ -25,8 +26,8 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    gredien
 }
+
 
 .titulo{
     font-size: 3rem;
@@ -48,15 +49,12 @@ body{
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
-    background-color: #fff;
 }
 
 .contenedor .caja img{
     width: 60%;
     margin: 30px;
-    background-color: #fff;
     transition: all 250ms ease-in-out;
-
 }
 
 .contenedor .caja:hover img{
@@ -77,9 +75,28 @@ body{
     color: #444;
 }
 
+.form{
+    padding: 20px;
+}
+
+
 #footer{
-    min-height: 200px;
+    display: block;
+    height: 100px;
     background-color: #000000;
     color: #fff;
-    padding: 40px;
+    padding: 20px;
+}
+
+#footer li{
+    display: inline-block;
+    margin-right: 40px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#footer li a{
+    text-decoration: none;
+    color: #fff;
 }
