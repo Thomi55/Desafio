@@ -1,0 +1,15 @@
+@mixin flex($direccion: row){
+	display: flex;
+	flex-direction: $direccion;
+}
+
+$miMap:(light:300, regular:400, medium:500, bold:700);
+
+$mainColor: #444;
+
+$font-weights:(
+	light: 300,
+	regular: 400,
+	medium: 500,
+	bold: 700,
+);

@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 body {
   font-height: 400px;
-  font-family: Georgia, sans-serif;
   background-color: burlywood; }
 
 .bg-dark {
@@ -22,41 +22,43 @@ body {
     top: 0;
     left: 0; }
 
-.titulo {
-  font-size: 3rem; }
+.titulo, .contenedor .caja .title {
+  font-size: 2rem; }
 
 .texto {
-  font-weight: 300px; }
+  font-weight: 400; }
 
 .contenedor {
   display: flex;
   flex-direction: row;
-  padding: 3rem 0;
+  width: 100%;
   justify-content: space-between; }
+  @media all and (max-width: 768px) {
+    .contenedor {
+      flex-wrap: wrap; } }
   .contenedor .caja {
-    width: 100%;
-    padding: 30px;
+    width: 70%;
+    padding: 60px;
     box-sizing: border-box; }
     .contenedor .caja img {
-      width: 60%;
+      width: 100%;
       margin: 30px;
       transition: all 250ms ease-in-out; }
       .contenedor .caja img:hover {
         transform: scale(1.1);
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
-    .contenedor .caja .titulo {
-      font-size: 1.5rem; }
     .contenedor .caja .detalles {
-      padding: 1rem 5px; }
+      padding: 2.5rem; }
     .contenedor .caja .precio {
-      font-size: 3rem;
-      color: #444; }
+      color: #444;
+      font-size: 2.5rem; }
 
 .form {
   padding: 20px; }
 
 #footer {
   display: block;
+  width: 100%;
   height: 100px;
   background-color: #000000;
   color: #fff;
