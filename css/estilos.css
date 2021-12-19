@@ -48,7 +48,7 @@ body {
         transform: scale(1.1);
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
     .contenedor .caja .detalles {
-      padding: 2.5rem; }
+      padding: 2rem; }
     .contenedor .caja .precio {
       color: #444;
       font-size: 2.5rem; }
