@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 body {
   font-height: 400px;
   background-color: burlywood; }
@@ -48,16 +53,41 @@ body {
         transform: scale(1.1);
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
     .contenedor .caja .detalles {
-      padding: 2rem; }
-    .contenedor .caja .precio {
-      color: #444;
-      font-size: 2.5rem; }
+      padding: 5px;
+      text-align: center; }
     .contenedor .caja a {
       text-decoration: none;
       color: #000000; }
 
+#galeria img {
+  width: 100%;
+  height: 400px; }
+  #galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
+
+#galeria .col-lg-4 {
+  padding: 25px; }
+
 .form {
   padding: 20px; }
+
+#main-container {
+  margin: 50px auto;
+  width: 600px; }
+  #main-container table {
+    width: 100%;
+    background-color: white;
+    text-align: left; }
+    #main-container table thead {
+      background-color: #a18594;
+      border-bottom: solid 5px #F362D;
+      color: #000; }
+    #main-container table tr:hover {
+      background-color: #369681; }
+    #main-container table th, #main-container table td {
+      border: solid 1px black;
+      padding: 15px; }
 
 #footer {
   display: block;

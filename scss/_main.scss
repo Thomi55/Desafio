@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body{
     font-height: 400px;
     background-color: burlywood;
@@ -59,11 +66,8 @@ body{
             @extend .titulo;
         }
         .detalles{
-            padding: 2rem;
-        }
-        .precio{
-            color: #444;
-            font-size: 2.5rem;
+            padding: 5px;
+            text-align: center;
         }
         a{
             text-decoration: none;
@@ -73,11 +77,48 @@ body{
 
 }
 
+#galeria{
+    img{
+        width: 100%;
+        height: 400px;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+        }
+    }
+    .col-lg-4{
+        padding: 25px;
+    }
+}
+
 
 .form{
     padding: 20px;
 }
 
+#main-container{
+    margin: 50px auto;
+    width: 600px;
+    table{
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        thead{
+            background-color: #a18594;
+            border-bottom: solid 5px #F362D;
+            color: #000;
+        }
+        tr{
+            &:hover{
+                background-color: #369681;
+            }
+        }
+        th, td{
+            border: solid 1px black;
+            padding: 15px;
+        }
+    }
+}
 
 #footer{
     display: block;
@@ -98,3 +139,6 @@ body{
         }
     }
 }
+
+
+
